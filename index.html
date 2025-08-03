@@ -1,36 +1,1008 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
+
 <head>
-  <meta charset="UTF-8">
-  <meta content="IE=Edge" http-equiv="X-UA-Compatible">
-  <!-- <meta name="description" content="Full Stack Engineer"> -->
-
-  <!-- iOS meta tags & icons -->
-  <meta name="apple-mobile-web-app-capable" content="yes">
-  <meta name="apple-mobile-web-app-status-bar-style" content="black">
-  <meta name="apple-mobile-web-app-title" content="Full Stack Engineer">
-  <meta name="image" property="og:image" content="https://cagriaydin.github.io/assets/assets/pic.png">
-  <meta property="og:type" content="Portfolio">
-  <meta property="og:description" name="description" content="A Full Stack Engineer who likes to help other developers problems and enjoys creating mobile and web applications especially with Flutter, C#, and .Net.">
-  <link rel="apple-touch-icon" href="icons/Icon-192.png">
-
-  <!-- Favicon -->
-  <link rel="shortcut icon" type="image/png" href="favicon.png"/>
-
-  <title>Çağrı Aydın's Portfolio</title>
-  <link rel="manifest" href="manifest.json">
+    <meta charset="utf-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <title>Cagri Aydin | Portfolio</title>
+    <meta name="robots" content="noindex, follow" />
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <!-- CSS 
+    ============================================ -->
+    <link rel="stylesheet" href="assets/css/vendor/bootstrap.min.css">
+    <link rel="stylesheet" href="assets/css/vendor/slick.css">
+    <link rel="stylesheet" href="assets/css/vendor/slick-theme.css">
+    <link rel="stylesheet" href="assets/css/vendor/aos.css">
+    <link rel="stylesheet" href="assets/css/plugins/feature.css">
+    <!-- Style css -->
+    <link rel="stylesheet" href="assets/css/style.css">
 </head>
-<body>
-  <!-- This script installs service_worker.js to provide PWA functionality to
-       application. For more information, see:
-       https://developers.google.com/web/fundamentals/primers/service-workers -->
-  <script>
-    if ('serviceWorker' in navigator) {
-      window.addEventListener('load', function () {
-        navigator.serviceWorker.register('flutter_service_worker.js');
-      });
-    }
-  </script>
-  <script src="main.dart.js" type="application/javascript"></script>
+
+<body class="template-color-1 spybody" data-spy="scroll" data-bs-target=".navbar-example2" data-offset="150">
+    <!-- header - developer home -->
+    <!-- Start Header -->
+    <header class="rn-header haeder-default black-logo-version header--fixed header--sticky">
+        <div class="header-wrapper rn-popup-mobile-menu m--0 row align-items-center">
+            <!-- Start Header Left -->
+            <div class="col-lg-2 col-6">
+                <div class="header-left">
+                </div>
+            </div>
+            <!-- End Header Left -->
+            <!-- Start Header Center -->
+            <div class="col-lg-10 col-6">
+                <div class="header-center">
+                    <nav id="sideNav" class="mainmenu-nav navbar-example2 d-none d-xl-block onepagenav">
+                        <!-- Start Mainmanu Nav -->
+                        <ul class="primary-menu nav nav-pills">
+                            <li class="nav-item current"><a class="nav-link smoth-animation active"
+                                    href="#home">Home</a></li>
+                            <li class="nav-item"><a class="nav-link smoth-animation" href="#experiences">Experience</a>
+                            </li>
+                            <li class="nav-item"><a class="nav-link smoth-animation" href="#educations">Education</a>
+                            </li>
+                            <li class="nav-item"><a class="nav-link smoth-animation" href="#portfolio">Portfolio</a>
+                            </li>
+                            <li class="nav-item"><a class="nav-link smoth-animation" href="#testimonial">Testimonial</a></li>
+                        </ul>
+                        <!-- End Mainmanu Nav -->
+                    </nav>
+                    <!-- Start Header Right  -->
+                    <div class="header-right">
+                        <a class="rn-btn" target="_blank"
+                            href="mailto:cagriaydin.dev@gmail.com"><span>CONTACT ME</span></a>
+
+                        <div class="hamberger-menu d-block d-xl-none">
+                            <i id="menuBtn" class="feather-menu humberger-menu"></i>
+                        </div>
+
+                        <div class="close-menu d-block">
+                            <span class="closeTrigger">
+                                <i data-feather="x"></i>
+                            </span>
+                        </div>
+                    </div>
+                    <!-- End Header Right  -->
+
+                </div>
+            </div>
+            <!-- End Header Center -->
+        </div>
+    </header>
+    <!-- End Header Area -->
+
+    <!-- Start Popup Mobile Menu  -->
+    <div class="popup-mobile-menu">
+        <div class="inner">
+            <div class="menu-top">
+                <div class="menu-header">
+                    <a class="logo">
+                    </a>
+                    <div class="close-button">
+                        <button class="close-menu-activation close mt--10"><i data-feather="x"></i></button>
+                    </div>
+                </div>
+            </div>
+            <div class="content">
+                <ul class="primary-menu nav nav-pills onepagenav">
+                    <li class="nav-item current"><a class="nav-link smoth-animation" href="#home">Home</a></li>
+                    <li class="nav-item"><a class="nav-link smoth-animation" href="#experiences">Experience</a></li>
+                    <li class="nav-item"><a class="nav-link smoth-animation" href="#educations">Education</a></li>
+                    <li class="nav-item"><a class="nav-link smoth-animation" href="#portfolio">Portfolio</a></li>
+                    <li class="nav-item"><a class="nav-link smoth-animation" href="#testimonial">Testimonial</a></li>
+                </ul>
+               
+            </div>
+            <div class="button-wrapper d-flex mt--15">
+                                                <a class="rn-btn" target="_blank"
+                            href="mailto:cagriaydin.dev@gmail.com"><span>CONTACT ME</span></a>
+                                            </div>
+            
+        </div>
+    </div>
+    <!-- End Popup Mobile Menu  -->
+
+    <main class="main-page-wrapper">
+
+        <!-- Start Slider Area -->
+        <div id="home" class="rn-slider-area">
+            <div class="slide slider-style-1">
+                <div class="container">
+                    <div class="row row--30 align-items-center">
+                        <div class="order-2 order-lg-1 col-lg-7 mt_md--50 mt_sm--50 mt_lg--30">
+                            <div class="content">
+                                <div class="inner">
+                                    <span class="subtitle">Welcome to my portfolio</span>
+                                    <h1 class="title">Hi, I’m <span>Cagri Aydin</span><br>
+                                        <span class="header-caption" id="page-top">
+                                            <!-- type headline start-->
+                                            <span class="cd-headline clip is-full-width">
+                                                <span>a </span>
+                                                <!-- ROTATING TEXT -->
+                                                <span class="cd-words-wrapper">
+                                                    <b class="is-visible">Flutter Developer.</b>
+                                                    <b class="is-hidden">Senior Flutter Developer.</b>
+                                                </span>
+                                            </span>
+                                            <!-- type headline end -->
+                                        </span>
+                                    </h1>
+
+                                    <div>
+                                        <p class="description">Senior Flutter Developer with 10+ years of software development experience, including 5+ years
+building high-quality mobile apps with Flutter. Skilled in crafting pixel-perfect, scalable applications
+using clean architecture, modular design, and CI/CD best practices. Strong communicator and
+proactive team player in remote-first environments, with a passion for continuous learning and
+modern development trends such as AI integration.</p>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-lg-6 col-xl-6 col-md-6 col-sm-6 col-12">
+                                        <div class="social-share-inner-left">
+                                            <span class="title">find with me</span>
+                                            <ul class="social-share d-flex liststyle">
+                                                <li class="linkedin"><a href="https://www.linkedin.com/in/cagriaydin/" target="_blank"><i data-feather="linkedin"></i></a>
+                                                </li>
+                                                <li class="github"><a href="https://github.com/cagriaydin" target="_blank"><i data-feather="github"></i></a>
+                                                </li>
+                                                <li class="mail"><a href="mailto:cagriaydin.dev@gmail.com"><i data-feather="mail"></i></a>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-6 col-xl-6 col-md-6 col-sm-6 col-12 mt_mobile--30">
+                                        <div class="skill-share-inner">
+                                            <span class="title">Download my curriculum vitae</span>
+                                            <div class="button-wrapper d-flex">
+                                                <a class="rn-btn mr--30" href="assets/Cagri_Aydin_Senior_Flutter_Developer.pdf" target="_blank"><span>DOWNLOAD CV</span></a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="order-1 order-lg-2 col-lg-5">
+                            <div class="thumbnail">
+                                <div class="inner">
+                                    <img src="assets/images/profile.png" alt="Personal Portfolio Images">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- End Slider Area -->
+
+        <!-- Start Experience area -->
+        <div id="experiences" class="rn-experience-area section-separator rn-section-gap">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-12">
+                        <div data-aos="fade-up" data-aos-duration="500" data-aos-delay="100" data-aos-once="true"
+                            class="section-title text-center">
+                            <span class="subtitle">Over 10 years of experience</span>
+                            <h2 class="title">My Experience</h2>
+                        </div>
+                    </div>
+                </div>
+                <div class="row mt--10">
+                    <div class="col-12 mt_experience">
+
+                        <!-- single skills -->
+                        <div data-aos="fade-up" data-aos-duration="500" data-aos-delay="100" data-aos-once="true"
+                            class="experience-style-two">
+                            <div class="experience-left">
+                                <div class="experience-image">
+                                    <img src="assets/images/sq1.png" alt="Personal Portfolio">
+                                </div>
+                                <div class="experience-center">
+                                    <span class="date">2020–Present</span>
+                                    <h4 class="experience-title">
+                                       Square1
+                                    </h4>
+                                    <h6 class="subtitle">
+                                        Flutter Developer
+                                    </h6>
+                                    <p class="disc">Developed and maintained multiple end-to-end Flutter applications</p>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- single skills -->
+
+                        <!-- single skills -->
+                        <div data-aos="fade-up" data-aos-duration="500" data-aos-delay="200" data-aos-once="true"
+                            class="experience-style-two">
+                            <div class="experience-left">
+                                <div class="experience-image">
+                                    <img src="assets/images/appliquette.png" alt="Personal Portfolio">
+                                </div>
+                                <div class="experience-center">
+                                    <span class="date">2021-2021</span>
+                                    <h4 class="experience-title">
+                                        Appliquette
+                                    </h4>
+                                    <h6 class="subtitle">
+                                        Flutter Developer
+                                    </h6>
+                                    <p class="disc">Focused on state management and UI improvements</p>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- single skills -->
+
+                        <!-- single skills -->
+                        <div data-aos="fade-up" data-aos-duration="500" data-aos-delay="300" data-aos-once="true"
+                            class="experience-style-two">
+                            <div class="experience-left">
+                                <div class="experience-image">
+                                    <img src="assets/images/logo.png" alt="Personal Portfolio">
+                                </div>
+                                <div class="experience-center">
+                                    <span class="date">2015-2020</span>
+                                    <h4 class="experience-title">
+                                        LOGO Business Solutions
+                                    </h4>
+                                    <h6 class="subtitle">
+                                        Software Engineer
+                                    </h6>
+                                    <p class="disc">Developed and maintained enterprise-grade HR mobile applications</p>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- single skills -->
+
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- End Experience area -->
+
+        <!-- Start education section -->
+        <div id="educations" class="rn-education-area rn-section-gap section-separator">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-12">
+                        <div data-aos="fade-up" data-aos-duration="500" data-aos-delay="100" data-aos-once="true"
+                            class="section-title text-center">
+                            <span class="subtitle">Bachelor of Engineering</span>
+                            <h2 class="title">Education</h2>
+                        </div>
+                    </div>
+                </div>
+                <div class="row mt--10">
+                    <div class="col-12 mt_experience">
+                        <!-- single skills -->
+                        <div data-aos="fade-up" data-aos-duration="500" data-aos-delay="100" data-aos-once="true"
+                            class="experience-style-two">
+                            <div class="experience-left">
+                                <div class="experience-image">
+                                    <img src="assets/images/dokuzeylul.png" alt="Personal Portfolio">
+                                </div>
+                                <div class="experience-center">
+                                    <span class="date">2011-2016</span>
+                                    <h4 class="experience-title">
+                                        Dokuz Eylul University
+                                    </h4>
+                                    <h6 class="subtitle">
+                                        Software Engineering
+                                    </h6>
+                                    <p class="disc">Bachelor of Engineering</p>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- single skills -->
+
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- End education section -->
+
+        <!-- Start Portfolio Area -->
+        <div class="rn-portfolio-area rn-section-gap section-separator" id="portfolio">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-12">
+                        <div class="section-title text-center">
+                            <span class="subtitle">Visit my portfolio</span>
+                            <h2 class="title">My Portfolio</h2>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="row row--25 mt--10 mt_md--10 mt_sm--10">
+                    <!-- Start Single Portfolio -->
+                    <div data-aos="fade-up" data-aos-delay="100" data-aos-once="true"
+                        class="col-lg-6 col-xl-4 col-md-6 col-12 mt--50 mt_md--30 mt_sm--30">
+                        <div class="rn-portfolio" data-bs-toggle="modal" data-bs-target="#xModalCenter">
+                            <div class="inner">
+                                <div class="thumbnail">
+                                    <a href="javascript:void(0)">
+                                        <img src="assets/images/kr.png"
+                                            alt="Personal Portfolio Images">
+                                    </a>
+                                </div>
+                                <div class="content">
+                                    <div class="category-info">
+                                        <div class="category-list">
+                                            <a href="javascript:void(0)">Flutter</a>
+                                        </div>
+                                    </div>
+                                    <h4 class="title"><a href="javascript:void(0)">Kids Radio+<i
+                                                class="feather-arrow-up-right"></i></a></h4>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- End Single Portfolio -->
+
+                    <!-- Start Single Portfolio -->
+                    <div data-aos="fade-up" data-aos-delay="300" data-aos-once="true"
+                        class="col-lg-6 col-xl-4 col-md-6 col-12 mt--50 mt_md--30 mt_sm--30">
+                        <div class="rn-portfolio" data-bs-toggle="modal" data-bs-target="#xModalCenter2">
+                            <div class="inner">
+                                <div class="thumbnail">
+                                    <a href="javascript:void(0)">
+                                        <img src="assets/images/bp.png"
+                                            alt="Personal Portfolio Images">
+                                    </a>
+                                </div>
+                                <div class="content">
+                                    <div class="category-info">
+                                        <div class="category-list">
+                                            <a href="javascript:void(0)">Flutter</a>
+                                        </div>
+                                        
+                                    </div>
+                                    <h4 class="title"><a href="javascript:void(0)">Business Post<i class="feather-arrow-up-right"></i></a></h4>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- End Single Portfolio -->
+
+                    <!-- Start Single Portfolio -->
+                    <div data-aos="fade-up" data-aos-delay="500" data-aos-once="true"
+                        class="col-lg-6 col-xl-4 col-md-6 col-12 mt--50 mt_md--30 mt_sm--30">
+                        <div class="rn-portfolio" data-bs-toggle="modal" data-bs-target="#xModalCenter3">
+                            <div class="inner">
+                                <div class="thumbnail">
+                                    <a href="javascript:void(0)">
+                                        <img src="assets/images/saytv.png"
+                                            alt="Personal Portfolio Images">
+                                    </a>
+                                </div>
+                                <div class="content">
+                                    <div class="category-info">
+                                        <div class="category-list">
+                                            <a href="javascript:void(0)">Flutter</a>
+                                        </div>
+                                       
+                                    </div>
+                                    <h4 class="title"><a href="javascript:void(0)">SAYTV
+                                            <i class="feather-arrow-up-right"></i></a></h4>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- End Single Portfolio -->
+
+                    <!-- Start Single Portfolio -->
+                    <div data-aos="fade-up" data-aos-delay="100" data-aos-once="true"
+                        class="col-lg-6 col-xl-4 col-md-6 col-12 mt--50 mt_md--30 mt_sm--30">
+                        <div class="rn-portfolio" data-bs-toggle="modal" data-bs-target="#xModalCenter4">
+                            <div class="inner">
+                                <div class="thumbnail">
+                                    <a href="javascript:void(0)">
+                                        <img src="assets/images/cpl.png"
+                                            alt="Personal Portfolio Images">
+                                    </a>
+                                </div>
+                                <div class="content">
+                                    <div class="category-info">
+                                        <div class="category-list">
+                                            <a href="javascript:void(0)">Flutter</a>
+                                        </div>
+                                        
+                                    </div>
+                                    <h4 class="title"><a href="javascript:void(0)">CPL Chat<i class="feather-arrow-up-right"></i></a></h4>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- End Single Portfolio -->
+
+                    <!-- Start Single Portfolio -->
+                    <div data-aos="fade-up" data-aos-delay="300" data-aos-once="true"
+                        class="col-lg-6 col-xl-4 col-md-6 col-12 mt--50 mt_md--30 mt_sm--30">
+                        <div class="rn-portfolio" data-bs-toggle="modal" data-bs-target="#xModalCenter5">
+                            <div class="inner">
+                                <div class="thumbnail">
+                                    <a href="javascript:void(0)">
+                                        <img src="assets/images/stpats.png"
+                                            alt="Personal Portfolio Images">
+                                    </a>
+                                </div>
+                                <div class="content">
+                                    <div class="category-info">
+                                        <div class="category-list">
+                                            <a href="javascript:void(0)">Flutter</a>
+                                        </div>
+                                       
+                                    </div>
+                                    <h4 class="title"><a href="javascript:void(0)">St Pat's FC<i
+                                                class="feather-arrow-up-right"></i></a></h4>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- End Single Portfolio -->
+
+                    <!-- Start Single Portfolio -->
+                    <div data-aos="fade-up" data-aos-delay="500" data-aos-once="true"
+                        class="col-lg-6 col-xl-4 col-md-6 col-12 mt--50 mt_md--30 mt_sm--30">
+                        <div class="rn-portfolio" data-bs-toggle="modal" data-bs-target="#xModalCenter6">
+                            <div class="inner">
+                                <div class="thumbnail">
+                                    <a href="javascript:void(0)">
+                                        <img src="assets/images/picket.png"
+                                            alt="Personal Portfolio Images">
+                                    </a>
+                                </div>
+                                <div class="content">
+                                    <div class="category-info">
+                                        <div class="category-list">
+                                            <a href="javascript:void(0)">Flutter</a>
+                                        </div>
+                                        
+                                    </div>
+                                    <h4 class="title"><a href="javascript:void(0)">Picket<i
+                                                class="feather-arrow-up-right"></i></a></h4>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- End Single Portfolio -->
+                </div>
+            </div>
+        </div>
+        <!-- End portfolio Area -->
+         
+       
+
+        <!-- Modal Portfolio Body area Start -->
+        <div class="modal fade" id="xModalCenter" tabindex="-1" role="dialog" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered" role="document">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <button type="button" class="close" data-bs-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true"><i data-feather="x"></i></span>
+                        </button>
+                    </div>
+                    <div class="modal-body">
+                        <div class="row align-items-center">
+
+                            <div class="col-lg-6">
+                                <div class="portfolio-popup-thumbnail">
+                                    <div class="image">
+                                        <img class="w-100" src="assets/images/kr.png" alt="slide">
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="col-lg-6">
+                                <div class="text-content">
+                                    <h3>
+                                        <span>Flutter App</span> Kids Radio+
+                                    </h3>
+                                    <p class="mb--30">A mobile app for children featuring educational videos, audiobooks, and live radio — designed to provide a safe and engaging experience.</p>
+                                    <div class="button-group mt--20">
+                                        <a href="https://kidsradioplus.com/" target="_blank" class="rn-btn">
+                                            <span>VIEW PROJECT</span>
+                                            <i data-feather="chevron-right"></i>
+                                        </a>
+                                    </div>
+
+                                </div>
+                                <!-- End of .text-content -->
+                            </div>
+                        </div>
+                        <!-- End of .row Body-->
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="modal fade" id="xModalCenter2" tabindex="-1" role="dialog" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered" role="document">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <button type="button" class="close" data-bs-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true"><i data-feather="x"></i></span>
+                        </button>
+                    </div>
+                    <div class="modal-body">
+                        <div class="row align-items-center">
+
+                            <div class="col-lg-6">
+                                <div class="portfolio-popup-thumbnail">
+                                    <div class="image">
+                                        <img class="w-100" src="assets/images/bp.png" alt="slide">
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="col-lg-6">
+                                <div class="text-content">
+                                    <h3>
+                                        <span>Flutter App</span> Business Post
+                                    </h3>
+                                    <p class="mb--30">Mobile app for Ireland’s leading business and finance publication, offering live news, in-depth analysis, and expert insights for professionals and decision-makers.</p>
+                                    <div class="button-group mt--20">
+                                        <a href="https://www.businesspost.ie/" target="_blank" class="rn-btn">
+                                            <span>VIEW PROJECT</span>
+                                            <i data-feather="chevron-right"></i>
+                                        </a>
+                                    </div>
+
+                                </div>
+                                <!-- End of .text-content -->
+                            </div>
+                        </div>
+                        <!-- End of .row Body-->
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="modal fade" id="xModalCenter3" tabindex="-1" role="dialog" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered" role="document">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <button type="button" class="close" data-bs-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true"><i data-feather="x"></i></span>
+                        </button>
+                    </div>
+                    <div class="modal-body">
+                        <div class="row align-items-center">
+
+                            <div class="col-lg-6">
+                                <div class="portfolio-popup-thumbnail">
+                                    <div class="image">
+                                        <img class="w-100" src="assets/images/saytv.png" alt="slide">
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="col-lg-6">
+                                <div class="text-content">
+                                    <h3>
+                                        <span>Flutter App</span> SAYTV
+                                    </h3>
+                                    <p class="mb--30">Fan-focused mobile platform that connects sports clubs, supporters, and sponsors through interactive, sponsor-ready content — enhancing engagement and unlocking new revenue streams.</p>
+                                    <div class="button-group mt--20">
+                                        <a href="https://www.saytv.net/" target="_blank" class="rn-btn">
+                                            <span>VIEW PROJECT</span>
+                                            <i data-feather="chevron-right"></i>
+                                        </a>
+                                    </div>
+
+                                </div>
+                                <!-- End of .text-content -->
+                            </div>
+                        </div>
+                        <!-- End of .row Body-->
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="modal fade" id="xModalCenter4" tabindex="-1" role="dialog" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered" role="document">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <button type="button" class="close" data-bs-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true"><i data-feather="x"></i></span>
+                        </button>
+                    </div>
+                    <div class="modal-body">
+                        <div class="row align-items-center">
+
+                            <div class="col-lg-6">
+                                <div class="portfolio-popup-thumbnail">
+                                    <div class="image">
+                                        <img class="w-100" src="assets/images/cpl.png" alt="slide">
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="col-lg-6">
+                                <div class="text-content">
+                                    <h3>
+                                        <span>Flutter App</span> CPL Chat
+                                    </h3>
+                                    <p class="mb--30">White-label mobile app built on the SAYTV platform, developed for the Caribbean Premier League (CPL) to engage fans with real-time chat, interactive content, and live match streaming.</p>
+                                    <div class="button-group mt--20">
+                                        <a href="https://www.cplt20.com/" target="_blank" class="rn-btn">
+                                            <span>VIEW PROJECT</span>
+                                            <i data-feather="chevron-right"></i>
+                                        </a>
+                                    </div>
+
+                                </div>
+                                <!-- End of .text-content -->
+                            </div>
+                        </div>
+                        <!-- End of .row Body-->
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="modal fade" id="xModalCenter5" tabindex="-1" role="dialog" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered" role="document">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <button type="button" class="close" data-bs-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true"><i data-feather="x"></i></span>
+                        </button>
+                    </div>
+                    <div class="modal-body">
+                        <div class="row align-items-center">
+
+                            <div class="col-lg-6">
+                                <div class="portfolio-popup-thumbnail">
+                                    <div class="image">
+                                        <img class="w-100" src="assets/images/stpats.png" alt="slide">
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="col-lg-6">
+                                <div class="text-content">
+                                    <h3>
+                                        <span>Flutter App</span> St Pat's FC
+                                    </h3>
+                                    <p class="mb--30">White-label mobile app built on the SAYTV platform for St Patrick’s Athletic Football Club to connect with fans via match-day content, chat, and streaming.</p>
+                                    <div class="button-group mt--20">
+                                        <a href="https://www.stpatsfc.com/" target="_blank" class="rn-btn">
+                                            <span>VIEW PROJECT</span>
+                                            <i data-feather="chevron-right"></i>
+                                        </a>
+                                    </div>
+
+                                </div>
+                                <!-- End of .text-content -->
+                            </div>
+                        </div>
+                        <!-- End of .row Body-->
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="modal fade" id="xModalCenter6" tabindex="-1" role="dialog" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered" role="document">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <button type="button" class="close" data-bs-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true"><i data-feather="x"></i></span>
+                        </button>
+                    </div>
+                    <div class="modal-body">
+                        <div class="row align-items-center">
+
+                            <div class="col-lg-6">
+                                <div class="portfolio-popup-thumbnail">
+                                    <div class="image">
+                                        <img class="w-100" src="assets/images/picket.png" alt="slide">
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="col-lg-6">
+                                <div class="text-content">
+                                    <h3>
+                                        <span>Flutter App</span> Picket
+                                    </h3>
+                                    <p class="mb--30">Mobile app designed to help families organize tasks, schedules, and household responsibilities in one place — simplifying daily life through smart planning.</p>
+                                    <div class="button-group mt--20">
+                                        <a href="https://www.picketfeds.com/app" target="_blank" class="rn-btn">
+                                            <span>VIEW PROJECT</span>
+                                            <i data-feather="chevron-right"></i>
+                                        </a>
+                                    </div>
+
+                                </div>
+                                <!-- End of .text-content -->
+                            </div>
+                        </div>
+                        <!-- End of .row Body-->
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- End Modal Portfolio area -->
+
+         <!-- Start Testimonia Area  -->
+        <div class="rn-testimonial-area testimonial-style-2 rn-section-gapTop pb--80 pb_md--50 section-separator"
+            id="testimonial">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-12">
+                        <div data-aos="fade-up" data-aos-duration="1000" data-aos-delay="100" data-aos-once="true"
+                            class="section-title text-center">
+                            <span class="subtitle">What people say</span>
+                            <h2 class="title">Testimonial</h2>
+                        </div>
+                    </div>
+                </div>
+
+
+                <div data-aos="fade-up" data-aos-duration="1000" data-aos-delay="300" data-aos-once="true"
+                    class="testimonial-activation-item-3 slick-arrow-style-one row">
+
+                    <!-- Start single Testimonial -->
+                    <div class="rn-testimonial">
+                        <div class="testimonial-inner">
+                            <div class="testimonial-header">
+                                <div class="thumbnail">
+                                    <img src="assets/images/paul.jpeg" alt="client-image">
+                                </div>
+                                <h5 class="ts-header">
+                                    <span class="text-color-primary">Paul Conroy</span>
+                                </h5>
+                            </div>
+                            <div class="testimonial-body">
+                                <p class="discription" style="font-weight: bold;">CTO at Square1</p> 
+                                <p class="discription mt--20">
+                                    I had the pleasure of working with Cagri for five years, during which time he consistently delivered high-quality Flutter applications that impressed both clients and colleagues. His work is characterised by clean architecture, robustness, and reliability. This is a testament to both his technical ability and his attention to detail. Cagri played a key role in a number of successful projects, and his strong work ethic and availability meant he was always ready to go the extra mile to get things over the line.
+                                </p>
+                                <p class="discription mt--20">
+                                    Beyond his technical strengths, Cagri brings a genuinely positive and upbeat energy to any team he's part of. He’s equally comfortable collaborating within a larger team or working independently on more self-contained projects, and he never hesitates to lend a hand wherever it's needed. That versatility and attitude made him a real asset to our team, and I have no doubt he’ll bring the same value and spirit to any future role.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- End single Testimonial -->
+
+                    <!-- Start single Testimonial -->
+                    <div class="rn-testimonial">
+                        <div class="testimonial-inner">
+                            <div class="testimonial-header">
+                                <div class="thumbnail">
+                                    <img src="assets/images/dimitris.jpeg" alt="client-image">
+                                </div>
+                                <h5 class="ts-header">
+                                    <span class="text-color-primary">Dimitris Boutos</span>
+                                </h5>
+                            </div>
+                            <div class="testimonial-body">
+                               <p class="discription" style="font-weight: bold;">New Business Development Manager at Frontstage Entertainment</p> 
+                                <p class="discription mt--20">
+                                    For keeping a project team of more than 10 people aligned with a get-it-done-with-a-smile approach, Cagri Aydin is the one! Always the first to jump in when members of the team run into issues, we worked closely together for almost two years for a challenging product launch that demanded the integration of numerous features and foreseeing possible bugs.
+                                </p>
+                                <p class="discription mt--20">
+                                    Last but not least, all the team left every weekly meeting in a better mood!
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- End single Testimonial -->
+
+                    <!-- Start single Testimonial -->
+                    <div class="rn-testimonial">
+                        <div class="testimonial-inner">
+                            <div class="testimonial-header">
+                                <div class="thumbnail">
+                                    <img src="assets/images/paula.jpeg" alt="client-image">
+                                </div>
+                                <h5 class="ts-header">
+                                    <span class="text-color-primary">Paula Tidey</span>
+                                </h5>
+                            </div>
+                            <div class="testimonial-body">
+                                <p class="discription" style="font-weight: bold;">Co-Founder at SAYTV</p> 
+                                <p class="discription mt--20">
+                                    I had the pleasure of working with Cagri on our mobile development project, and he was fantastic to work with. Not only is he a knowledgeable and skilled developer, but he also brings a great attitude to every meeting. Cagri has a big hands-on spirit and made us feel like he was part of our team by constantly trying to make complex tasks and tight timelines work. Working with Cagri was a great experience, and I’d highly recommend him to any team looking for a talented mobile developer who’s also a genuinely nice person to work with.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- End single Testimonial -->
+
+                    <!-- Start single Testimonial -->
+                    <div class="rn-testimonial">
+                        <div class="testimonial-inner">
+                            <div class="testimonial-header">
+                                <div class="thumbnail">
+                                    <img src="assets/images/angela.jpeg" alt="client-image">
+                                </div>
+                                <h5 class="ts-header">
+                                    <span class="text-color-primary">Angela Roberts</span>
+                                </h5>
+                            </div>
+                            <div class="testimonial-body">
+                                 <p class="discription" style="font-weight: bold;">General Manager at Square1</p> 
+                                <p class="discription mt--20">
+                                    I’ve had the pleasure of working with Cagri for several years, and I can say without hesitation that he is one of the most reliable and committed developers I’ve worked with. As a senior Flutter developer, he consistently demonstrates a strong sense of ownership—treating every project as if it were his own.
+                                </p>
+                                <p class="discription mt--20">
+                                    His dedication to quality is evident in the code he writes, always following best practices and maintaining a clean, scalable approach. Beyond his technical skills, he’s a true professional—hard-working, proactive, and always dependable.
+                                </p>
+                                <p class="discription mt--20">
+                                    Equally important, Cagri is an absolute pleasure to work with. He communicates clearly, collaborates effortlessly with team members, and brings a calm, thoughtful presence to any project. I’m grateful to have him as part of the team and would highly recommend him to anyone looking for a top-tier Flutter developer.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- End single Testimonial -->
+
+                    <!-- Start single Testimonial -->
+                    <div class="rn-testimonial">
+                        <div class="testimonial-inner">
+                            <div class="testimonial-header">
+                                <div class="thumbnail">
+                                    <img src="assets/images/jose.jpeg" alt="client-image">
+                                </div>
+                                <h5 class="ts-header">
+                                    <span class="text-color-primary">Jose Valdés</span>
+                                </h5>
+                            </div>
+                            <div class="testimonial-body">
+                                <p class="discription" style="font-weight: bold;">Mobile Tech Lead at Square1</p> 
+                                <p class="discription mt--20">
+                                    I’ve had the pleasure of working with Cagri on several projects, and his expertise in Flutter really shows. He’s taken on challenging tasks and managed to develop successful applications on his own, which is no easy feat. His approach to problem-solving and building apps is always thoughtful and efficient, and I’ve learned a lot from working alongside him.
+                                </p>
+                                <p class="discription mt--20">
+                                    What I appreciate most is that Cagri is not only a reliable and supportive team player but also someone who brings a sense of calm to the team. You know you can always count on him, and working together has given me that extra confidence in every project. Over time, he’s become not just a colleague, but also a friend because of the great person he is.
+                                </p>
+                                <p class="discription mt--20">
+                                    I’m really grateful to have him as part of the team and in my life.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- End single Testimonial -->
+
+                    <!-- Start single Testimonial -->
+                    <div class="rn-testimonial">
+                        <div class="testimonial-inner">
+                            <div class="testimonial-header">
+                                <div class="thumbnail">
+                                    <img src="assets/images/swapnil.jpeg" alt="client-image">
+                                </div>
+                                <h5 class="ts-header">
+                                    <span class="text-color-primary">Swapnil Bhavsar</span>
+                                </h5>
+                            </div>
+                            <div class="testimonial-body">
+                                <p class="discription" style="font-weight: bold;">Backend Tech Lead at Square1</p> 
+                                <p class="discription mt--20">
+                                    I had the pleasure of working alongside Cagri Aydin at our company, where he consistently demonstrated exceptional skills as a Flutter developer. His deep understanding of Flutter and Dart, coupled with a keen eye for design, significantly contributed to the success of several key projects.
+                                </p>
+                                <p class="discription mt--20">
+                                    Cagri is not only technically proficient but also an excellent team player. He is always willing to share his knowledge and assist team members, fostering a collaborative and positive work environment. His problem-solving abilities and innovative thinking make him an invaluable asset to any development team.
+                                </p>
+                                <p class="discription mt--20">
+                                    I highly recommend Cagri for any opportunity that allows him to utilize his expertise in Flutter development. His professionalism, dedication, and passion for technology are truly commendable.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- End single Testimonial -->
+
+                    <!-- Start single Testimonial -->
+                    <div class="rn-testimonial">
+                        <div class="testimonial-inner">
+                            <div class="testimonial-header">
+                                <div class="thumbnail">
+                                    <img src="assets/images/emiliano.jpeg" alt="client-image">
+                                </div>
+                                <h5 class="ts-header">
+                                    <span class="text-color-primary">Emiliano Tisato</span>
+                                </h5>
+                            </div>
+                            <div class="testimonial-body">
+                                <p class="discription" style="font-weight: bold;">Senior Engineer at Cody AI</p> 
+                                <p class="discription mt--20">
+                                    Working with Cagri was a game-changer for our team. He brought a remarkable level of consistency, ensuring that every deliverable was completed not only within the agreed timeframe but also to the highest possible standard. When we embarked on a project with cutting-edge technology—Flutter, at a time when it was still early in its adoption curve—I had concerns about the complexity and risk. Yet, Cagri’s calm, methodical approach and his confident grasp of the latest frameworks eased those doubts entirely.
+                                </p>
+                                <p class="discription mt--20">
+                                    Throughout the project, Cagri demonstrated an uncanny ability to adapt quickly, troubleshoot unforeseen issues, and refine solutions until they were spotless. He never missed a deadline, never cut corners, and never delivered anything less than pristine code. What truly stood out was his unwavering professional rigor: he didn’t just meet expectations; he consistently surpassed them, navigating every technical hurdle with both agility and finesse.
+                                </p>
+                                <p class="discription mt--20">
+                                    I would highly recommend Cagri to any team looking for a senior developer who can bring reliability, deep technical expertise, and forward-thinking problem-solving skills to the table. He will not only handle the challenge of complex tech stacks but will also elevate the entire team’s performance through his steady guidance, exceptional work ethic, and results-driven mindset.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- End single Testimonial -->
+
+                    <!-- Start single Testimonial -->
+                    <div class="rn-testimonial">
+                        <div class="testimonial-inner">
+                            <div class="testimonial-header">
+                                <div class="thumbnail">
+                                    <img src="assets/images/martin.jpeg" alt="client-image">
+                                </div>
+                                <h5 class="ts-header">
+                                    <span class="text-color-primary">Martin Bacigalupo</span>
+                                </h5>
+                            </div>
+                            <div class="testimonial-body">
+                                <p class="discription" style="font-weight: bold;">Product Manager at Bitstamp</p> 
+                                <p class="discription mt--20">
+                                    Working with Cagri has been a really satisfying and positive experience. He’s super collaborative and always focused on finding the best technical solutions for the challenges we faced in our projects. What stood out most was his proactive attitude, especially when it came to keeping up with the latest updates in Flutter, which was still an emerging technology at the time. Beyond his technical skills, Cagri’s friendly and supportive nature made him a great teammate and very approachable, always quick to adapt to new challenges.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- End single Testimonial -->
+
+                    <!-- Start single Testimonial -->
+                    <div class="rn-testimonial">
+                        <div class="testimonial-inner">
+                            <div class="testimonial-header">
+                                <div class="thumbnail">
+                                    <img src="assets/images/emmanuel.jpeg" alt="client-image">
+                                </div>
+                                <h5 class="ts-header">
+                                    <span class="text-color-primary">Emmanuel Ogaba</span> 
+                                </h5>
+                            </div>
+                            <div class="testimonial-body">
+                                <p class="discription" style="font-weight: bold;">Senior Backend Developer at Square1</p> 
+                                <p class="discription mt--20">
+                                    I am delighted to recommend Cagri, a Senior Flutter Developer, for any prospective opportunity. As the Backend Engineer, I enjoyed working with Cagri on the SAYTV project at Square1.
+                                </p>
+                                <p class="discription mt--20">
+                                    Cagri is an exceptional developer, with a wealth of experience and a keen eye for detail. His proficiency in Flutter is evident in the quality and efficiency of his work. He brings a level of professionalism that is both admirable and inspiring.
+                                </p>
+                                <p class="discription mt--20">
+                                    Beyond his technical skills, Cagri stands out for his great sense of humor, which always lightens the mood and fosters a positive team environment. He is incredibly reliable, consistently delivering high-quality work on time, and can always be counted on in crunch situations.
+                                </p>
+                                <p class="discription mt--20">
+                                    Cagri’s approach to work is not just about getting things done but getting them done well. His dependability and collaborative spirit make him a joy to work with and an invaluable asset to any team.
+                                </p>
+                                <p class="discription mt--20">
+                                    I am confident that Cagri will continue to excel in his future endeavors and I highly recommend him without reservation.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- End single Testimonial -->
+                </div>
+
+            </div>
+        </div>
+        <!-- End Testimonia Area  -->
+        
+        <!-- Back to  top Start -->
+        <div class="backto-top">
+            <div>
+                <i data-feather="arrow-up"></i>
+            </div>
+        </div>
+        <!-- Back to top end -->
+    </main>
+
+    <!-- JS ============================================ -->
+    <script src="assets/js/vendor/jquery.js"></script>
+    <script src="assets/js/vendor/modernizer.min.js"></script>
+    <script src="assets/js/vendor/feather.min.js"></script>
+    <script src="assets/js/vendor/slick.min.js"></script>
+    <script src="assets/js/vendor/bootstrap.js"></script>
+    <script src="assets/js/vendor/text-type.js"></script>
+    <script src="assets/js/vendor/wow.js"></script>
+    <script src="assets/js/vendor/aos.js"></script>
+    <script src="assets/js/vendor/particles.js"></script>
+    <script src="assets/js/vendor/jquery-one-page-nav.js"></script>
+    <!-- main JS -->
+    <script src="assets/js/main.js"></script>
 </body>
+
 </html>
