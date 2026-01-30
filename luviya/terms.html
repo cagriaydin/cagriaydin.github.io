@@ -1,0 +1,733 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Luviya Terms and Conditions - Legal agreement for using our AI-powered numerology app">
+    <title>Terms and Conditions - Luviya</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        :root {
+            --primary-color: #6366f1;
+            --text-dark: #1f2937;
+            --text-light: #6b7280;
+            --bg-light: #f9fafb;
+            --border-color: #e5e7eb;
+            --warning-color: #ef4444;
+        }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
+            line-height: 1.7;
+            color: var(--text-dark);
+            background: #ffffff;
+        }
+
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+
+        header {
+            text-align: center;
+            padding: 40px 20px;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            margin-bottom: 40px;
+        }
+
+        header h1 {
+            font-size: 2.5rem;
+            margin-bottom: 10px;
+            font-weight: 700;
+        }
+
+        .last-updated {
+            font-size: 0.9rem;
+            opacity: 0.9;
+            margin-top: 10px;
+        }
+
+        .toc {
+            background: var(--bg-light);
+            border-radius: 8px;
+            padding: 24px;
+            margin-bottom: 40px;
+            border: 1px solid var(--border-color);
+        }
+
+        .toc h2 {
+            font-size: 1.2rem;
+            margin-bottom: 16px;
+            color: var(--text-dark);
+        }
+
+        .toc ul {
+            list-style: none;
+        }
+
+        .toc li {
+            margin-bottom: 8px;
+        }
+
+        .toc a {
+            color: var(--primary-color);
+            text-decoration: none;
+            transition: color 0.2s;
+        }
+
+        .toc a:hover {
+            color: #4f46e5;
+            text-decoration: underline;
+        }
+
+        section {
+            margin-bottom: 40px;
+        }
+
+        h2 {
+            font-size: 1.8rem;
+            margin-bottom: 20px;
+            color: var(--text-dark);
+            padding-bottom: 10px;
+            border-bottom: 2px solid var(--primary-color);
+        }
+
+        h3 {
+            font-size: 1.4rem;
+            margin-top: 24px;
+            margin-bottom: 16px;
+            color: var(--text-dark);
+        }
+
+        p {
+            margin-bottom: 16px;
+            color: var(--text-light);
+        }
+
+        ul, ol {
+            margin-left: 24px;
+            margin-bottom: 16px;
+            color: var(--text-light);
+        }
+
+        li {
+            margin-bottom: 8px;
+        }
+
+        strong {
+            color: var(--text-dark);
+            font-weight: 600;
+        }
+
+        a {
+            color: var(--primary-color);
+            text-decoration: none;
+        }
+
+        a:hover {
+            text-decoration: underline;
+        }
+
+        .warning-box {
+            background: #fee2e2;
+            border-left: 4px solid var(--warning-color);
+            padding: 16px;
+            margin: 24px 0;
+            border-radius: 4px;
+        }
+
+        .info-box {
+            background: #fef3c7;
+            border-left: 4px solid #f59e0b;
+            padding: 16px;
+            margin: 24px 0;
+            border-radius: 4px;
+        }
+
+        .contact-box {
+            background: var(--bg-light);
+            border: 2px solid var(--border-color);
+            border-radius: 8px;
+            padding: 24px;
+            margin: 32px 0;
+        }
+
+        .contact-box h2 {
+            border: none;
+            margin-bottom: 16px;
+        }
+
+        .summary {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            border-radius: 8px;
+            padding: 32px;
+            margin: 40px 0;
+        }
+
+        .summary h2 {
+            color: white;
+            border: none;
+            margin-bottom: 20px;
+        }
+
+        .summary ul {
+            list-style: none;
+            margin-left: 0;
+        }
+
+        .summary li {
+            padding-left: 28px;
+            position: relative;
+            margin-bottom: 12px;
+            color: white;
+        }
+
+        .summary li:before {
+            content: "✓";
+            position: absolute;
+            left: 0;
+            font-weight: bold;
+            color: #10b981;
+        }
+
+        footer {
+            text-align: center;
+            padding: 40px 20px;
+            background: var(--bg-light);
+            color: var(--text-light);
+            margin-top: 60px;
+            border-top: 1px solid var(--border-color);
+        }
+
+        .back-to-top {
+            position: fixed;
+            bottom: 30px;
+            right: 30px;
+            background: var(--primary-color);
+            color: white;
+            width: 50px;
+            height: 50px;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            cursor: pointer;
+            opacity: 0;
+            transition: opacity 0.3s;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            text-decoration: none;
+        }
+
+        .back-to-top.visible {
+            opacity: 1;
+        }
+
+        .back-to-top:hover {
+            background: #4f46e5;
+        }
+
+        @media (max-width: 768px) {
+            header h1 {
+                font-size: 2rem;
+            }
+
+            h2 {
+                font-size: 1.5rem;
+            }
+
+            h3 {
+                font-size: 1.2rem;
+            }
+
+            .container {
+                padding: 16px;
+            }
+        }
+
+        @media print {
+            header {
+                background: none;
+                color: var(--text-dark);
+            }
+
+            .toc, .back-to-top {
+                display: none;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Terms and Conditions</h1>
+        <p>Luviya - AI-Powered Numerology & Spiritual Guidance</p>
+        <p class="last-updated"><strong>Last Updated:</strong> [To be updated upon app publication]</p>
+    </header>
+
+    <div class="container">
+        <nav class="toc">
+            <h2>Table of Contents</h2>
+            <ul>
+                <li><a href="#acceptance">1. Acceptance of Terms</a></li>
+                <li><a href="#service">2. Description of Service</a></li>
+                <li><a href="#account">3. Account Registration and User Responsibilities</a></li>
+                <li><a href="#content">4. User Content and Input Data</a></li>
+                <li><a href="#ip">5. Intellectual Property Rights</a></li>
+                <li><a href="#prohibited">6. Prohibited Uses</a></li>
+                <li><a href="#availability">7. Service Availability and Modifications</a></li>
+                <li><a href="#paid">8. Future Paid Features and Subscriptions</a></li>
+                <li><a href="#liability">9. Limitation of Liability</a></li>
+                <li><a href="#indemnification">10. Indemnification</a></li>
+                <li><a href="#termination">11. Termination</a></li>
+                <li><a href="#dispute">12. Dispute Resolution and Governing Law</a></li>
+                <li><a href="#third-party">13. Third-Party Services and Links</a></li>
+                <li><a href="#changes">14. Changes to Terms</a></li>
+                <li><a href="#contact">20. Contact Information</a></li>
+            </ul>
+        </nav>
+
+        <section id="acceptance">
+            <h2>1. Acceptance of Terms</h2>
+            <p>Welcome to Luviya! These Terms and Conditions ("Terms") constitute a legally binding agreement between you ("User," "you," or "your") and the Luviya application operator ("we," "us," or "our") regarding your use of the Luviya mobile application (the "App").</p>
+            <p>By downloading, installing, accessing, or using the App, you acknowledge that you have read, understood, and agree to be bound by these Terms. If you do not agree to these Terms, you must not use the App.</p>
+        </section>
+
+        <section id="service">
+            <h2>2. Description of Service</h2>
+            <p>Luviya is an AI-powered mobile application that provides:</p>
+            <ul>
+                <li><strong>Numerology Calculations</strong>: Daily energy numbers, soul numbers, and element balance analysis based on your name and birthdate</li>
+                <li><strong>Personalized Spiritual Guidance</strong>: AI-generated insights, affirmations, and recommendations for personal growth</li>
+                <li><strong>Relationship Compatibility Analysis</strong>: Numerological compatibility assessments between you and a partner</li>
+                <li><strong>Career Path Insights</strong>: Career recommendations based on your numerological profile</li>
+                <li><strong>Daily Content</strong>: Daily energy insights, rituals, affirmations, and spiritual guidance</li>
+            </ul>
+            <p>The App uses Google's Gemini AI technology to generate personalized content based on numerological principles.</p>
+
+            <h3>Important Disclaimers</h3>
+            <div class="warning-box">
+                <p>The App provides spiritual and entertainment services only. The content, insights, and recommendations provided by Luviya:</p>
+                <ul>
+                    <li>Are <strong>NOT</strong> professional medical, psychological, legal, or financial advice</li>
+                    <li>Are <strong>NOT</strong> a substitute for professional consultation or treatment</li>
+                    <li>Should <strong>NOT</strong> be relied upon for making important life decisions without consulting qualified professionals</li>
+                    <li>Are based on numerological traditions and AI interpretation, which are not scientifically validated</li>
+                </ul>
+            </div>
+
+            <h3>AI-Generated Content Notice</h3>
+            <div class="info-box">
+                <p>The App uses Google's Gemini AI to generate personalized content. Please be aware that:</p>
+                <ul>
+                    <li>AI-generated insights are based on algorithms and may not be accurate or applicable to your situation</li>
+                    <li>AI interpretations of numerology are for entertainment and spiritual exploration purposes only</li>
+                    <li>The same inputs may produce different outputs over time as the AI model evolves</li>
+                    <li>We are not responsible for the accuracy, appropriateness, or quality of AI-generated content</li>
+                </ul>
+            </div>
+        </section>
+
+        <section id="account">
+            <h2>3. Account Registration and User Responsibilities</h2>
+
+            <h3>Age Requirements</h3>
+            <p>The App is rated 13+ and is intended for users aged 13 years and older.</p>
+            <p>By using the App, you represent that:</p>
+            <ul>
+                <li>You are at least 13 years of age</li>
+                <li>You have the legal capacity to enter into these Terms</li>
+                <li>If you are under 18, you have obtained parental or guardian consent to use the App</li>
+            </ul>
+
+            <h3>Anonymous Authentication</h3>
+            <p>Luviya uses Firebase Anonymous Authentication, which means:</p>
+            <ul>
+                <li>You do not need to create a username, password, email, or phone number</li>
+                <li>A unique anonymous User ID is automatically generated for your account</li>
+                <li>Your account is tied to your device and App installation</li>
+            </ul>
+
+            <h3>Required Information</h3>
+            <p>To use the App's features, you must provide:</p>
+            <ul>
+                <li>Your first name</li>
+                <li>Your last name (surname)</li>
+                <li>Your birthdate</li>
+            </ul>
+
+            <h3>Accuracy of Information</h3>
+            <p>You agree to:</p>
+            <ul>
+                <li>Provide accurate, current, and complete information</li>
+                <li>Understand that numerology calculations depend on the accuracy of the information you provide</li>
+                <li>Not provide false or misleading information</li>
+                <li>Not impersonate any person or entity</li>
+            </ul>
+            <p><strong>Note</strong>: While we require accurate information for meaningful numerology calculations, providing inaccurate information does not violate these Terms, as the consequences primarily affect the quality of your personalized content.</p>
+        </section>
+
+        <section id="content">
+            <h2>4. User Content and Input Data</h2>
+
+            <h3>Your Input</h3>
+            <p>When using the App, you may provide:</p>
+            <ul>
+                <li>Personal information (name, surname, birthdate)</li>
+                <li>Partner information for relationship analysis (name and birthdate)</li>
+                <li>Preferences and settings</li>
+            </ul>
+
+            <h3>Temporary Partner Data</h3>
+            <p>Partner information you provide for relationship compatibility analysis:</p>
+            <ul>
+                <li>Is processed temporarily for analysis purposes only</li>
+                <li>Is <strong>NOT</strong> stored in our databases or local storage</li>
+                <li>Is sent to our AI service and immediately discarded after generating your report</li>
+                <li>Remains your sole responsibility regarding consent and accuracy</li>
+            </ul>
+
+            <h3>Data Ownership</h3>
+            <p>You retain all rights to the personal information you provide to the App. By using the App, you grant us a limited license to process this information solely for the purpose of providing App services.</p>
+        </section>
+
+        <section id="ip">
+            <h2>5. Intellectual Property Rights</h2>
+
+            <h3>Our Ownership</h3>
+            <p>All intellectual property rights in the App, including but not limited to:</p>
+            <ul>
+                <li>Software code, design, and architecture</li>
+                <li>User interface and visual elements</li>
+                <li>App name, logo, and branding</li>
+                <li>Original content and methodologies</li>
+            </ul>
+            <p>are owned by us or our licensors. These Terms do not grant you any ownership rights to the App or its content.</p>
+
+            <h3>AI-Generated Content</h3>
+            <p>Content generated by the App using Google Gemini AI:</p>
+            <ul>
+                <li>Is created specifically for you based on your input</li>
+                <li>Is provided for your personal, non-commercial use</li>
+                <li>May be similar to content generated for other users with similar inputs</li>
+                <li>Remains subject to these Terms and may be cached for performance purposes</li>
+            </ul>
+
+            <h3>Your License to Use</h3>
+            <p>We grant you a limited, non-exclusive, non-transferable, revocable license to:</p>
+            <ul>
+                <li>Access and use the App on your personal device</li>
+                <li>View and use AI-generated content for personal, non-commercial purposes</li>
+            </ul>
+
+            <p>You may <strong>NOT</strong>:</p>
+            <ul>
+                <li>Copy, modify, distribute, sell, or lease any part of the App</li>
+                <li>Reverse engineer, decompile, or attempt to extract the source code</li>
+                <li>Remove or alter any copyright, trademark, or proprietary notices</li>
+                <li>Use the App for any commercial purpose without our written permission</li>
+                <li>Create derivative works based on the App</li>
+            </ul>
+        </section>
+
+        <section id="prohibited">
+            <h2>6. Prohibited Uses</h2>
+            <p>You agree NOT to use the App to:</p>
+
+            <h3>Illegal Activities</h3>
+            <ul>
+                <li>Violate any applicable local, national, or international law or regulation</li>
+                <li>Engage in any unlawful, fraudulent, or deceptive activity</li>
+            </ul>
+
+            <h3>Harmful Actions</h3>
+            <ul>
+                <li>Transmit any viruses, malware, or other malicious code</li>
+                <li>Attempt to gain unauthorized access to the App, servers, or databases</li>
+                <li>Interfere with or disrupt the App's functionality or servers</li>
+                <li>Overload or attempt to overwhelm our infrastructure</li>
+            </ul>
+
+            <h3>Automated Access</h3>
+            <ul>
+                <li>Use bots, scrapers, or automated tools to access the App</li>
+                <li>Attempt to access the App through any method other than the official mobile application</li>
+                <li>Use the App in any way that could damage, disable, or impair the service</li>
+            </ul>
+
+            <h3>Misuse of Content</h3>
+            <ul>
+                <li>Copy or redistribute AI-generated content for commercial purposes</li>
+                <li>Use the App to generate content for third parties as a service</li>
+                <li>Present AI-generated content as your own original work</li>
+            </ul>
+        </section>
+
+        <section id="availability">
+            <h2>7. Service Availability and Modifications</h2>
+
+            <h3>"As Is" Service</h3>
+            <p>The App is provided on an "as is" and "as available" basis. We do not guarantee:</p>
+            <ul>
+                <li>Uninterrupted or error-free operation</li>
+                <li>That the App will be available at all times</li>
+                <li>That all features will function perfectly on all devices</li>
+                <li>Specific uptime or performance metrics</li>
+            </ul>
+
+            <h3>Right to Modify or Discontinue</h3>
+            <p>We reserve the right to:</p>
+            <ul>
+                <li>Modify, suspend, or discontinue any feature of the App at any time</li>
+                <li>Update or change these Terms with notice to users</li>
+                <li>Perform maintenance that may temporarily limit functionality</li>
+                <li>Change pricing or introduce paid features in the future (see Section 8)</li>
+            </ul>
+            <p>We will make reasonable efforts to notify users of significant changes through the App or push notifications.</p>
+
+            <h3>Third-Party Dependencies</h3>
+            <p>The App relies on third-party services (Firebase, Google Gemini AI, Google Fonts). Disruptions to these services may affect App functionality, and we are not liable for issues caused by third-party service providers.</p>
+        </section>
+
+        <section id="paid">
+            <h2>8. Future Paid Features and Subscriptions</h2>
+
+            <h3>Current Status</h3>
+            <p>The App is <strong>currently free to use</strong> with no payment required for any features.</p>
+
+            <h3>Future Monetization</h3>
+            <p>We may introduce paid features, subscriptions, or in-app purchases in the future. If we do:</p>
+            <ul>
+                <li>Free users will continue to have access to core features</li>
+                <li>Paid features will be clearly identified and optional</li>
+                <li>Separate payment terms and conditions will apply</li>
+                <li>Users will have the option to upgrade or remain on the free tier</li>
+            </ul>
+            <p>We will provide advance notice before implementing any paid features and will not charge you without your explicit consent.</p>
+
+            <h3>No Refund Obligation for Future Features</h3>
+            <p>When paid features are introduced, all purchases will be subject to separate payment terms. We are not obligated to provide refunds unless required by law or specified in the future payment terms.</p>
+        </section>
+
+        <section id="liability">
+            <h2>9. Limitation of Liability</h2>
+
+            <h3>No Professional Advice Warranty</h3>
+            <p>To the fullest extent permitted by law, we disclaim all warranties, express or implied, regarding:</p>
+            <ul>
+                <li>The accuracy, completeness, or reliability of numerology calculations</li>
+                <li>The suitability of AI-generated content for your specific situation</li>
+                <li>The effectiveness of spiritual guidance or recommendations</li>
+                <li>Results or outcomes from following App recommendations</li>
+            </ul>
+
+            <h3>Exclusion of Damages</h3>
+            <p>We shall not be liable for any:</p>
+            <ul>
+                <li>Indirect, incidental, special, consequential, or punitive damages</li>
+                <li>Loss of profits, revenue, data, or business opportunities</li>
+                <li>Personal injury or property damage arising from App use</li>
+                <li>Decisions made based on App content</li>
+                <li>Damages arising from third-party service disruptions</li>
+            </ul>
+
+            <h3>Maximum Liability Cap</h3>
+            <p>Our total liability to you for any claims arising from or related to the App shall not exceed:</p>
+            <ul>
+                <li>The amount you paid to us in the 12 months prior to the claim (currently zero), or</li>
+                <li>$100 USD, whichever is greater</li>
+            </ul>
+
+            <h3>Exceptions</h3>
+            <p>Some jurisdictions do not allow the exclusion or limitation of certain warranties or damages. In such cases, our liability will be limited to the maximum extent permitted by applicable law.</p>
+        </section>
+
+        <section id="indemnification">
+            <h2>10. Indemnification</h2>
+            <p>You agree to indemnify, defend, and hold harmless Luviya, its operator, and any affiliates from any claims, liabilities, damages, losses, costs, or expenses (including reasonable attorneys' fees) arising from:</p>
+            <ul>
+                <li>Your use or misuse of the App</li>
+                <li>Your violation of these Terms</li>
+                <li>Your violation of any third-party rights, including privacy rights</li>
+                <li>Inaccurate or false information you provide</li>
+                <li>Your use of partner information without proper consent</li>
+            </ul>
+        </section>
+
+        <section id="termination">
+            <h2>11. Termination</h2>
+
+            <h3>Your Right to Terminate</h3>
+            <p>You may stop using the App and delete your account at any time through:</p>
+            <ol>
+                <li>Profile > Settings > Account Management > Delete Account</li>
+                <li>Upon deletion, all your data will be immediately removed from our systems</li>
+            </ol>
+
+            <h3>Our Right to Terminate</h3>
+            <p>We reserve the right to:</p>
+            <ul>
+                <li>Suspend or terminate your access to the App without prior notice</li>
+                <li>Delete your account if you violate these Terms</li>
+                <li>Discontinue the App entirely with reasonable notice to users</li>
+            </ul>
+
+            <h3>Effect of Termination</h3>
+            <p>Upon termination:</p>
+            <ul>
+                <li>Your license to use the App immediately ceases</li>
+                <li>Your data will be deleted in accordance with our Privacy Policy</li>
+                <li>Sections of these Terms that by nature should survive (e.g., intellectual property, limitation of liability) will remain in effect</li>
+            </ul>
+        </section>
+
+        <section id="dispute">
+            <h2>12. Dispute Resolution and Governing Law</h2>
+
+            <h3>Governing Law</h3>
+            <p>These Terms shall be governed by and construed in accordance with the laws of <strong>Turkey (Türkiye)</strong>, without regard to its conflict of law provisions.</p>
+
+            <h3>Jurisdiction</h3>
+            <p>You agree that any legal action or proceeding arising from or related to these Terms or the App shall be brought exclusively in the competent courts of Turkey.</p>
+
+            <h3>Informal Resolution</h3>
+            <p>Before filing any formal legal action, you agree to first contact us at <strong>cagriaydin.dev@gmail.com</strong> to attempt to resolve the dispute informally.</p>
+
+            <h3>Arbitration (if applicable)</h3>
+            <p>If informal resolution fails, disputes may be resolved through binding arbitration in accordance with Turkish arbitration laws, if both parties agree to arbitration.</p>
+        </section>
+
+        <section id="third-party">
+            <h2>13. Third-Party Services and Links</h2>
+
+            <h3>Third-Party Terms</h3>
+            <p>The App integrates with third-party services that have their own terms and privacy policies:</p>
+            <ul>
+                <li><strong>Firebase (Google)</strong>: <a href="https://firebase.google.com/terms" target="_blank">https://firebase.google.com/terms</a></li>
+                <li><strong>Google API Services</strong>: <a href="https://developers.google.com/terms" target="_blank">https://developers.google.com/terms</a></li>
+                <li><strong>Apple App Store</strong> (for iOS): <a href="https://www.apple.com/legal/internet-services/itunes/dev/stdeula/" target="_blank">Apple EULA</a></li>
+                <li><strong>Google Play Store</strong> (for Android): <a href="https://play.google.com/intl/en_us/about/play-terms/" target="_blank">Google Play Terms</a></li>
+            </ul>
+
+            <h3>Your Responsibility</h3>
+            <p>You are responsible for:</p>
+            <ul>
+                <li>Reading and agreeing to third-party terms and policies</li>
+                <li>Complying with third-party service requirements</li>
+                <li>Understanding that we are not responsible for third-party services</li>
+            </ul>
+
+            <h3>External Links</h3>
+            <p>The App may contain links to external websites or resources. We are not responsible for:</p>
+            <ul>
+                <li>The content, accuracy, or availability of external sites</li>
+                <li>Any damages or losses caused by external sites</li>
+                <li>Third-party privacy practices</li>
+            </ul>
+        </section>
+
+        <section id="changes">
+            <h2>14. Changes to Terms</h2>
+            <p>We may modify these Terms from time to time. When we do:</p>
+            <ol>
+                <li>We will update the "Last Updated" date at the top of this document</li>
+                <li>For material changes, we will notify you through:
+                    <ul>
+                        <li>In-app notification</li>
+                        <li>Push notification (if enabled)</li>
+                        <li>Email (if we collect emails in the future)</li>
+                    </ul>
+                </li>
+                <li>Your continued use of the App after changes constitutes acceptance of the updated Terms</li>
+            </ol>
+            <p>If you do not agree to the updated Terms, you must stop using the App and delete your account.</p>
+        </section>
+
+        <div class="contact-box" id="contact">
+            <h2>20. Contact Information</h2>
+            <p>If you have any questions, concerns, or feedback regarding these Terms, please contact us:</p>
+            <p>
+                <strong>Email:</strong> cagriaydin.dev@gmail.com<br>
+                <strong>Developer:</strong> [Your Full Name]<br>
+                <strong>Address:</strong> [Your Full Physical Address]<br>
+                <strong>Subject Line:</strong> Terms & Conditions Inquiry - Luviya<br>
+                <strong>Response Time:</strong> We aim to respond within 48 hours
+            </p>
+            <p>For technical support or account-related issues, please use the same email address with an appropriate subject line.</p>
+        </div>
+
+        <div class="summary">
+            <h2>Summary (TL;DR)</h2>
+            <ul>
+                <li>The App provides spiritual guidance and numerology insights (not professional advice)</li>
+                <li>You must provide accurate information (name, surname, birthdate) to use the App</li>
+                <li>Anonymous authentication—no email or password required</li>
+                <li>Partner data is processed temporarily but never stored</li>
+                <li>The App is currently free; paid features may be added in the future with advance notice</li>
+                <li>You may not copy, redistribute, or reverse engineer the App</li>
+                <li>We are not liable for decisions made based on App content</li>
+                <li>You can delete your account and data at any time</li>
+                <li>Governed by Turkish law; disputes resolved in Turkish courts</li>
+                <li>We may modify these Terms with notice to users</li>
+            </ul>
+            <p style="margin-top: 20px;">By using Luviya, you agree to these Terms. Thank you for being part of our spiritual community!</p>
+        </div>
+
+        <div style="background: var(--bg-light); padding: 20px; border-radius: 8px; text-align: center; margin-top: 40px;">
+            <p><strong>Package:</strong> ai.luviya.app<br>
+            <strong>Version:</strong> 1.0.0+3<br>
+            <strong>Effective Date:</strong> [To be updated upon app publication]</p>
+        </div>
+    </div>
+
+    <footer>
+        <p><strong>Luviya</strong> - AI-Powered Numerology & Spiritual Guidance</p>
+        <p>Package: ai.luviya.app | Version: 1.0.0+3</p>
+        <p style="margin-top: 10px;">
+            <a href="privacy-policy.html">Privacy Policy</a>
+        </p>
+    </footer>
+
+    <a href="#" class="back-to-top" id="backToTop">↑</a>
+
+    <script>
+        // Smooth scroll for anchor links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                const target = document.querySelector(this.getAttribute('href'));
+                if (target) {
+                    target.scrollIntoView({
+                        behavior: 'smooth',
+                        block: 'start'
+                    });
+                }
+            });
+        });
+
+        // Back to top button
+        const backToTop = document.getElementById('backToTop');
+        window.addEventListener('scroll', () => {
+            if (window.pageYOffset > 300) {
+                backToTop.classList.add('visible');
+            } else {
+                backToTop.classList.remove('visible');
+            }
+        });
+
+        backToTop.addEventListener('click', (e) => {
+            e.preventDefault();
+            window.scrollTo({
+                top: 0,
+                behavior: 'smooth'
+            });
+        });
+    </script>
+</body>
+</html>

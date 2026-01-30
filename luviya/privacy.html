@@ -1,0 +1,711 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Luviya Privacy Policy - How we collect, use, and protect your personal information">
+    <title>Privacy Policy - Luviya</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        :root {
+            --primary-color: #6366f1;
+            --text-dark: #1f2937;
+            --text-light: #6b7280;
+            --bg-light: #f9fafb;
+            --border-color: #e5e7eb;
+            --success-color: #10b981;
+        }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
+            line-height: 1.7;
+            color: var(--text-dark);
+            background: #ffffff;
+        }
+
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+
+        header {
+            text-align: center;
+            padding: 40px 20px;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            margin-bottom: 40px;
+        }
+
+        header h1 {
+            font-size: 2.5rem;
+            margin-bottom: 10px;
+            font-weight: 700;
+        }
+
+        .last-updated {
+            font-size: 0.9rem;
+            opacity: 0.9;
+            margin-top: 10px;
+        }
+
+        .toc {
+            background: var(--bg-light);
+            border-radius: 8px;
+            padding: 24px;
+            margin-bottom: 40px;
+            border: 1px solid var(--border-color);
+        }
+
+        .toc h2 {
+            font-size: 1.2rem;
+            margin-bottom: 16px;
+            color: var(--text-dark);
+        }
+
+        .toc ul {
+            list-style: none;
+        }
+
+        .toc li {
+            margin-bottom: 8px;
+        }
+
+        .toc a {
+            color: var(--primary-color);
+            text-decoration: none;
+            transition: color 0.2s;
+        }
+
+        .toc a:hover {
+            color: #4f46e5;
+            text-decoration: underline;
+        }
+
+        section {
+            margin-bottom: 40px;
+        }
+
+        h2 {
+            font-size: 1.8rem;
+            margin-bottom: 20px;
+            color: var(--text-dark);
+            padding-bottom: 10px;
+            border-bottom: 2px solid var(--primary-color);
+        }
+
+        h3 {
+            font-size: 1.4rem;
+            margin-top: 24px;
+            margin-bottom: 16px;
+            color: var(--text-dark);
+        }
+
+        p {
+            margin-bottom: 16px;
+            color: var(--text-light);
+        }
+
+        ul, ol {
+            margin-left: 24px;
+            margin-bottom: 16px;
+            color: var(--text-light);
+        }
+
+        li {
+            margin-bottom: 8px;
+        }
+
+        strong {
+            color: var(--text-dark);
+            font-weight: 600;
+        }
+
+        a {
+            color: var(--primary-color);
+            text-decoration: none;
+        }
+
+        a:hover {
+            text-decoration: underline;
+        }
+
+        .info-box {
+            background: #fef3c7;
+            border-left: 4px solid #f59e0b;
+            padding: 16px;
+            margin: 24px 0;
+            border-radius: 4px;
+        }
+
+        .success-box {
+            background: #d1fae5;
+            border-left: 4px solid var(--success-color);
+            padding: 16px;
+            margin: 24px 0;
+            border-radius: 4px;
+        }
+
+        .contact-box {
+            background: var(--bg-light);
+            border: 2px solid var(--border-color);
+            border-radius: 8px;
+            padding: 24px;
+            margin: 32px 0;
+        }
+
+        .contact-box h2 {
+            border: none;
+            margin-bottom: 16px;
+        }
+
+        .summary {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            border-radius: 8px;
+            padding: 32px;
+            margin: 40px 0;
+        }
+
+        .summary h2 {
+            color: white;
+            border: none;
+            margin-bottom: 20px;
+        }
+
+        .summary ul {
+            list-style: none;
+            margin-left: 0;
+        }
+
+        .summary li {
+            padding-left: 28px;
+            position: relative;
+            margin-bottom: 12px;
+            color: white;
+        }
+
+        .summary li:before {
+            content: "✓";
+            position: absolute;
+            left: 0;
+            font-weight: bold;
+            color: #10b981;
+        }
+
+        footer {
+            text-align: center;
+            padding: 40px 20px;
+            background: var(--bg-light);
+            color: var(--text-light);
+            margin-top: 60px;
+            border-top: 1px solid var(--border-color);
+        }
+
+        .back-to-top {
+            position: fixed;
+            bottom: 30px;
+            right: 30px;
+            background: var(--primary-color);
+            color: white;
+            width: 50px;
+            height: 50px;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            cursor: pointer;
+            opacity: 0;
+            transition: opacity 0.3s;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            text-decoration: none;
+        }
+
+        .back-to-top.visible {
+            opacity: 1;
+        }
+
+        .back-to-top:hover {
+            background: #4f46e5;
+        }
+
+        @media (max-width: 768px) {
+            header h1 {
+                font-size: 2rem;
+            }
+
+            h2 {
+                font-size: 1.5rem;
+            }
+
+            h3 {
+                font-size: 1.2rem;
+            }
+
+            .container {
+                padding: 16px;
+            }
+        }
+
+        @media print {
+            header {
+                background: none;
+                color: var(--text-dark);
+            }
+
+            .toc, .back-to-top {
+                display: none;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Privacy Policy</h1>
+        <p>Luviya - AI-Powered Numerology & Spiritual Guidance</p>
+        <p class="last-updated"><strong>Last Updated:</strong> [To be updated upon app publication]</p>
+    </header>
+
+    <div class="container">
+        <nav class="toc">
+            <h2>Table of Contents</h2>
+            <ul>
+                <li><a href="#introduction">Introduction</a></li>
+                <li><a href="#information-collect">Information We Collect</a></li>
+                <li><a href="#how-use">How We Use Your Information</a></li>
+                <li><a href="#third-party">Third-Party Services and Data Sharing</a></li>
+                <li><a href="#data-storage">Data Storage and Security</a></li>
+                <li><a href="#data-retention">Data Retention and Deletion</a></li>
+                <li><a href="#privacy-rights">Your Privacy Rights</a></li>
+                <li><a href="#children">Children's Privacy</a></li>
+                <li><a href="#international">International Data Transfers</a></li>
+                <li><a href="#notifications">Push Notifications</a></li>
+                <li><a href="#analytics">Analytics and Tracking</a></li>
+                <li><a href="#changes">Changes to This Privacy Policy</a></li>
+                <li><a href="#breach">Data Breach Notification</a></li>
+                <li><a href="#contact">Contact Us</a></li>
+            </ul>
+        </nav>
+
+        <section id="introduction">
+            <h2>Introduction</h2>
+            <p>Welcome to Luviya ("we," "our," or "us"). We are committed to protecting your privacy and being transparent about how we collect, use, and safeguard your personal information. This Privacy Policy explains our data practices for the Luviya mobile application (the "App").</p>
+            <p>Luviya is an AI-powered numerology and spiritual guidance application that provides personalized insights based on your name and birthdate. We believe in data minimization and only collect information that is essential to provide you with meaningful spiritual guidance.</p>
+            <p>By using the App, you agree to the collection and use of information in accordance with this Privacy Policy.</p>
+        </section>
+
+        <section id="information-collect">
+            <h2>Information We Collect</h2>
+            
+            <h3>Personal Information You Provide</h3>
+            <p>When you use Luviya, we collect the following personal information:</p>
+            <ul>
+                <li><strong>Name</strong>: Your first name</li>
+                <li><strong>Surname</strong>: Your last name</li>
+                <li><strong>Birthdate</strong>: Your complete date of birth</li>
+            </ul>
+            <p>This information is necessary for performing numerology calculations and generating personalized spiritual insights.</p>
+
+            <h3>Partner Information (Temporary)</h3>
+            <p>For relationship compatibility analysis, you may optionally provide:</p>
+            <ul>
+                <li><strong>Partner's Name</strong></li>
+                <li><strong>Partner's Birthdate</strong></li>
+            </ul>
+            <div class="info-box">
+                <strong>Important:</strong> Partner information is sent to our AI service for analysis purposes only and is <strong>not stored</strong> in our databases. This data is processed temporarily and immediately discarded after generating your compatibility report.
+            </div>
+
+            <h3>Authentication Data</h3>
+            <p>We use Firebase Anonymous Authentication, which means:</p>
+            <ul>
+                <li>You do not need to provide an email address or phone number</li>
+                <li>A unique anonymous User ID is automatically generated for your account</li>
+                <li>No personally identifiable authentication credentials are required</li>
+            </ul>
+
+            <h3>Device Information</h3>
+            <p>To enable push notifications, we collect:</p>
+            <ul>
+                <li><strong>Firebase Cloud Messaging (FCM) Token</strong>: A unique identifier for sending notifications to your device</li>
+                <li><strong>Platform Type</strong>: Whether you're using iOS or Android (for notification compatibility)</li>
+            </ul>
+
+            <h3>Android Permissions</h3>
+            <p>On Android devices, we request the following system permissions:</p>
+            <ul>
+                <li><strong>POST_NOTIFICATIONS</strong>: Display push notifications for daily reminders</li>
+                <li><strong>SCHEDULE_EXACT_ALARM</strong> & <strong>USE_EXACT_ALARM</strong>: Schedule daily notifications at your preferred time</li>
+                <li><strong>RECEIVE_BOOT_COMPLETED</strong>: Restart scheduled notifications after device reboot</li>
+                <li><strong>VIBRATE</strong>: Enable notification vibration</li>
+                <li><strong>WAKE_LOCK</strong>: Wake device to deliver time-sensitive notifications</li>
+            </ul>
+            <p>You can manage these permissions through your device settings at any time.</p>
+
+            <h3>Information We Do NOT Collect</h3>
+            <p>We want to be clear about what we <strong>do not</strong> collect:</p>
+            <ul>
+                <li>❌ Email addresses or phone numbers</li>
+                <li>❌ Location data or GPS coordinates</li>
+                <li>❌ Browsing history or app usage analytics</li>
+                <li>❌ Device identifiers (IMEI, MAC address, etc.)</li>
+                <li>❌ Payment information (the App is currently free)</li>
+                <li>❌ Contact lists or address books</li>
+                <li>❌ Photos, videos, or other media files</li>
+                <li>❌ Behavioral tracking or user profiling data</li>
+            </ul>
+        </section>
+
+        <section id="how-use">
+            <h2>How We Use Your Information</h2>
+            <p>We use the information we collect for the following purposes:</p>
+
+            <h3>Numerology Calculations</h3>
+            <ul>
+                <li>Calculate your daily energy number based on your birthdate</li>
+                <li>Determine your core soul numbers (Soul Drive, Life Path, Expression, Intuition)</li>
+                <li>Analyze element balance (Fire, Water, Air, Earth)</li>
+                <li>Generate career path insights</li>
+            </ul>
+
+            <h3>Personalized Content Generation</h3>
+            <ul>
+                <li>Create daily spiritual guidance and affirmations using Google Gemini AI</li>
+                <li>Generate personalized numerology interpretations</li>
+                <li>Provide relationship compatibility analysis (when requested)</li>
+                <li>Deliver career recommendations based on your numerological profile</li>
+            </ul>
+
+            <h3>Service Delivery</h3>
+            <ul>
+                <li>Maintain your user profile for consistent personalized experiences</li>
+                <li>Enable account management and settings preferences</li>
+                <li>Cache AI-generated content locally for faster loading and offline access</li>
+            </ul>
+
+            <h3>Push Notifications</h3>
+            <ul>
+                <li>Send daily energy reminders (if you enable notifications)</li>
+                <li>Deliver important app updates and announcements</li>
+            </ul>
+
+            <h3>Language Preferences</h3>
+            <ul>
+                <li>Remember your preferred language (Turkish or English)</li>
+                <li>Provide localized content and user interface</li>
+            </ul>
+        </section>
+
+        <section id="third-party">
+            <h2>Third-Party Services and Data Sharing</h2>
+            <p>We use the following third-party services to operate the App. Your data may be processed by these services:</p>
+
+            <h3>Firebase Services (Google LLC)</h3>
+            
+            <p><strong>Firebase Authentication</strong></p>
+            <ul>
+                <li><strong>Purpose:</strong> Anonymous user authentication</li>
+                <li><strong>Data Processed:</strong> Anonymous User ID</li>
+                <li><strong>Privacy Policy:</strong> <a href="https://firebase.google.com/support/privacy" target="_blank">https://firebase.google.com/support/privacy</a></li>
+            </ul>
+
+            <p><strong>Cloud Firestore</strong></p>
+            <ul>
+                <li><strong>Purpose:</strong> Store your user profile and notification tokens</li>
+                <li><strong>Data Processed:</strong> Name, surname, birthdate, User ID, FCM tokens</li>
+                <li><strong>Location:</strong> Data is stored on Google Cloud servers</li>
+                <li><strong>Privacy Policy:</strong> <a href="https://firebase.google.com/support/privacy" target="_blank">https://firebase.google.com/support/privacy</a></li>
+            </ul>
+
+            <p><strong>Firebase Cloud Messaging</strong></p>
+            <ul>
+                <li><strong>Purpose:</strong> Deliver push notifications</li>
+                <li><strong>Data Processed:</strong> FCM tokens, notification content</li>
+                <li><strong>Privacy Policy:</strong> <a href="https://firebase.google.com/support/privacy" target="_blank">https://firebase.google.com/support/privacy</a></li>
+            </ul>
+
+            <h3>Google Gemini AI (Firebase AI)</h3>
+            <p><strong>Purpose:</strong> Generate personalized numerology interpretations and spiritual guidance</p>
+            <p><strong>Data Processed:</strong> Your name, surname, birthdate, and (temporarily) partner information for compatibility analysis</p>
+            <div class="info-box">
+                <strong>Important Note:</strong> Your personal data (name, surname, birthdate, and partner information for compatibility analysis) is transmitted to Google's Gemini AI service for content generation. This data is processed according to Google's AI Principles and Privacy Policy. AI-generated responses are cached locally on your device and in cloud storage for performance optimization. Each cached response is associated with your User ID.
+            </div>
+            <p><strong>Privacy Policy:</strong> <a href="https://firebase.google.com/support/privacy" target="_blank">https://firebase.google.com/support/privacy</a></p>
+
+            <h3>Google Fonts</h3>
+            <ul>
+                <li><strong>Purpose:</strong> Display beautiful, custom typography in the App</li>
+                <li><strong>Data Processed:</strong> Font files are fetched from Google's servers; minimal technical data (e.g., IP address) may be logged by Google</li>
+                <li><strong>Privacy Policy:</strong> <a href="https://developers.google.com/fonts/faq/privacy" target="_blank">https://developers.google.com/fonts/faq/privacy</a></li>
+            </ul>
+
+            <h3>Data Sharing Policy</h3>
+            <p>We do <strong>not</strong> sell, rent, or trade your personal information to third parties for marketing purposes. Data is only shared with the third-party services listed above, and only to the extent necessary to provide App functionality.</p>
+        </section>
+
+        <section id="data-storage">
+            <h2>Data Storage and Security</h2>
+
+            <h3>Cloud Storage (Firebase Firestore)</h3>
+            <p>Your user profile (name, surname, birthdate, User ID) and notification tokens are stored securely in Google Cloud Firestore with:</p>
+            <ul>
+                <li>Industry-standard encryption in transit (HTTPS/TLS)</li>
+                <li>Encryption at rest on Google's servers</li>
+                <li>Access controls and authentication requirements</li>
+            </ul>
+
+            <h3>Local Storage (Hive)</h3>
+            <p>The following data is cached locally on your device for performance and offline access:</p>
+            <ul>
+                <li>Your user profile (for offline viewing)</li>
+                <li>AI-generated content (daily insights, soul number interpretations)</li>
+                <li>App preferences (notification settings, language preference)</li>
+            </ul>
+            <p>Local data is stored using the Hive database, which keeps data in your device's secure application storage folder.</p>
+
+            <h3>Security Measures</h3>
+            <p>We implement reasonable security measures to protect your information, including:</p>
+            <ul>
+                <li>Secure HTTPS connections for all network communications</li>
+                <li>Firebase security rules to restrict unauthorized data access</li>
+                <li>Anonymous authentication to minimize personal data exposure</li>
+                <li>Regular security updates to third-party dependencies</li>
+            </ul>
+            <p>However, no method of transmission over the internet or electronic storage is 100% secure. While we strive to protect your personal information, we cannot guarantee absolute security.</p>
+        </section>
+
+        <section id="data-retention">
+            <h2>Data Retention and Deletion</h2>
+
+            <h3>Retention Period</h3>
+            <p>We retain your personal information only as long as necessary to provide you with App services:</p>
+            <ul>
+                <li><strong>Active Users:</strong> Your data is retained while your account is active</li>
+                <li><strong>Cached Content:</strong> AI-generated content is cached until it expires or you clear it</li>
+                <li><strong>Notification Tokens:</strong> Retained until you disable notifications or delete your account</li>
+            </ul>
+
+            <h3>Data Deletion</h3>
+            <p><strong>Immediate Deletion:</strong> When you delete your account through the App settings, we immediately:</p>
+            <ol>
+                <li>Delete your user profile from Cloud Firestore</li>
+                <li>Delete all notification tokens from our database</li>
+                <li>Clear all locally cached data from your device</li>
+                <li>Clear all AI-generated content caches</li>
+            </ol>
+
+            <p><strong>How to Delete Your Account:</strong></p>
+            <ol>
+                <li>Open the App and go to Profile</li>
+                <li>Tap on Settings</li>
+                <li>Scroll to "Account Management"</li>
+                <li>Tap "Delete Account"</li>
+                <li>Confirm the deletion</li>
+            </ol>
+            <p>After deletion, your data cannot be recovered. If you wish to use the App again, you will need to create a new profile.</p>
+        </section>
+
+        <section id="privacy-rights">
+            <h2>Your Privacy Rights</h2>
+            <p>Depending on your location, you may have specific privacy rights:</p>
+
+            <h3>Rights Under GDPR (European Union Users)</h3>
+            <p>If you are located in the European Union, you have the following rights:</p>
+            <ul>
+                <li><strong>Right to Access:</strong> Request a copy of the personal data we hold about you</li>
+                <li><strong>Right to Rectification:</strong> Request correction of inaccurate or incomplete data</li>
+                <li><strong>Right to Erasure:</strong> Request deletion of your personal data (see "Data Deletion" above)</li>
+                <li><strong>Right to Restrict Processing:</strong> Request that we limit how we use your data</li>
+                <li><strong>Right to Data Portability:</strong> Receive your data in a structured, machine-readable format</li>
+                <li><strong>Right to Object:</strong> Object to certain types of data processing</li>
+                <li><strong>Right to Withdraw Consent:</strong> Withdraw your consent at any time</li>
+            </ul>
+
+            <h3>Rights Under CCPA (California Users)</h3>
+            <p>If you are a California resident, you have the right to:</p>
+            <ul>
+                <li><strong>Know:</strong> Request information about the personal data we collect, use, and disclose</li>
+                <li><strong>Delete:</strong> Request deletion of your personal data</li>
+                <li><strong>Opt-Out:</strong> Opt-out of the "sale" of your personal data (Note: we do not sell personal data)</li>
+                <li><strong>Non-Discrimination:</strong> Not receive discriminatory treatment for exercising your privacy rights</li>
+            </ul>
+
+            <h3>Rights Under KVKK (Turkey Users)</h3>
+            <p>If you are located in Turkey, you have the right to:</p>
+            <ul>
+                <li>Learn whether your personal data is being processed</li>
+                <li>Request information about data processing</li>
+                <li>Learn the purpose of data processing and whether it is used appropriately</li>
+                <li>Know third parties to whom your data is transferred</li>
+                <li>Request correction of incomplete or inaccurate data</li>
+                <li>Request deletion or destruction of data under certain conditions</li>
+                <li>Object to automated processing that produces legal effects</li>
+            </ul>
+
+            <h3>How to Exercise Your Rights</h3>
+            <p>To exercise any of these rights, please contact us at <strong>cagriaydin.dev@gmail.com</strong> with:</p>
+            <ul>
+                <li>The subject line: "Privacy Rights Request - Luviya"</li>
+                <li>Your User ID (found in Profile > Settings)</li>
+                <li>A description of your request</li>
+            </ul>
+            <p>We will respond to your request within 30 days.</p>
+        </section>
+
+        <section id="children">
+            <h2>Children's Privacy</h2>
+            <p>The App is rated 13+ and is intended for users aged 13 years and older.</p>
+            <p>We do not knowingly collect personal information from children under 13 years of age. If you are under 13, you may not use the App. If you are a parent or guardian and believe your child under 13 has provided us with personal information, please contact us at <strong>cagriaydin.dev@gmail.com</strong>, and we will delete the information immediately.</p>
+        </section>
+
+        <section id="international">
+            <h2>International Data Transfers</h2>
+            <p>Your personal data may be transferred to and processed in countries other than your country of residence, specifically:</p>
+            <ul>
+                <li><strong>United States:</strong> Google's Firebase and Cloud services operate globally, including in the U.S.</li>
+                <li><strong>European Union:</strong> Data may also be processed in Google's EU data centers</li>
+            </ul>
+            <p>These transfers are necessary to provide the App services. Google complies with applicable data protection frameworks and provides adequate safeguards for international data transfers.</p>
+        </section>
+
+        <section id="notifications">
+            <h2>Push Notifications</h2>
+            <p>We use Firebase Cloud Messaging to send push notifications:</p>
+
+            <h3>What We Send</h3>
+            <ul>
+                <li>Daily energy reminders (time configurable in settings)</li>
+                <li>Important app updates or announcements</li>
+            </ul>
+
+            <h3>Your Control</h3>
+            <ul>
+                <li>You can enable or disable notifications at any time in the App settings</li>
+                <li>You can also manage notification permissions through your device's system settings</li>
+                <li>Disabling notifications does not affect other App functionality</li>
+            </ul>
+
+            <h3>Data Collection</h3>
+            <ul>
+                <li>We collect FCM tokens to identify your device for notification delivery</li>
+                <li>We do not track whether you open or interact with notifications</li>
+            </ul>
+        </section>
+
+        <section id="analytics">
+            <h2>Analytics and Tracking</h2>
+            <div class="success-box">
+                <strong>Important:</strong> Luviya does <strong>not</strong> use analytics or tracking services.
+            </div>
+            <p>We do not collect:</p>
+            <ul>
+                <li>Usage statistics</li>
+                <li>User behavior analytics</li>
+                <li>Event tracking</li>
+                <li>Crash reporting with user identifiable data</li>
+                <li>Marketing or advertising data</li>
+            </ul>
+            <p>This is intentional. We believe in your privacy and do not need to track how you use the App.</p>
+        </section>
+
+        <section id="changes">
+            <h2>Changes to This Privacy Policy</h2>
+            <p>We may update this Privacy Policy from time to time to reflect changes in our practices or legal requirements. When we make changes:</p>
+            <ol>
+                <li>We will update the "Last Updated" date at the top of this policy</li>
+                <li>For material changes, we will notify you through the App or via push notification</li>
+                <li>Continued use of the App after changes constitutes acceptance of the updated policy</li>
+            </ol>
+            <p>We encourage you to review this Privacy Policy periodically.</p>
+        </section>
+
+        <section id="breach">
+            <h2>Data Breach Notification</h2>
+            <p>In the unlikely event of a data breach that affects your personal information, we will:</p>
+            <ol>
+                <li>Notify affected users within 72 hours of discovering the breach</li>
+                <li>Describe the nature of the breach and data involved</li>
+                <li>Provide guidance on protective measures you can take</li>
+                <li>Report the breach to relevant authorities as required by law</li>
+            </ol>
+        </section>
+
+        <div class="contact-box" id="contact">
+            <h2>Contact Us</h2>
+            <p>If you have any questions, concerns, or requests regarding this Privacy Policy or our data practices, please contact us:</p>
+            <p>
+                <strong>Email:</strong> cagriaydin.dev@gmail.com<br>
+                <strong>Developer:</strong> [Your Full Name]<br>
+                <strong>Address:</strong> [Your Full Physical Address - Required for App Store/Play Store]<br>
+                <strong>Subject Line:</strong> Privacy Inquiry - Luviya App<br>
+                <strong>Response Time:</strong> We aim to respond within 48 hours
+            </p>
+            <p>For privacy rights requests or data deletion, please include your User ID (found in Profile > Settings) in your message.</p>
+        </div>
+
+        <div class="summary">
+            <h2>Summary (TL;DR)</h2>
+            <ul>
+                <li>We collect only essential information: name, surname, and birthdate</li>
+                <li>Anonymous authentication—no email or phone required</li>
+                <li>Partner data is processed temporarily but never stored</li>
+                <li>No analytics, tracking, or behavioral monitoring</li>
+                <li>Data is deleted immediately upon request</li>
+                <li>We use Firebase (Google) and Gemini AI for service delivery</li>
+                <li>You have full rights to access, correct, and delete your data</li>
+                <li>Compliant with GDPR, CCPA, and KVKK regulations</li>
+            </ul>
+            <p style="margin-top: 20px;">Thank you for trusting Luviya with your spiritual journey.</p>
+        </div>
+    </div>
+
+    <footer>
+        <p><strong>Luviya</strong> - AI-Powered Numerology & Spiritual Guidance</p>
+        <p>Package: ai.luviya.app | Version: 1.0.0+3</p>
+        <p style="margin-top: 10px;">
+            <a href="terms-and-conditions.html">Terms & Conditions</a>
+        </p>
+    </footer>
+
+    <a href="#" class="back-to-top" id="backToTop">↑</a>
+
+    <script>
+        // Smooth scroll for anchor links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                const target = document.querySelector(this.getAttribute('href'));
+                if (target) {
+                    target.scrollIntoView({
+                        behavior: 'smooth',
+                        block: 'start'
+                    });
+                }
+            });
+        });
+
+        // Back to top button
+        const backToTop = document.getElementById('backToTop');
+        window.addEventListener('scroll', () => {
+            if (window.pageYOffset > 300) {
+                backToTop.classList.add('visible');
+            } else {
+                backToTop.classList.remove('visible');
+            }
+        });
+
+        backToTop.addEventListener('click', (e) => {
+            e.preventDefault();
+            window.scrollTo({
+                top: 0,
+                behavior: 'smooth'
+            });
+        });
+    </script>
+</body>
+</html>
